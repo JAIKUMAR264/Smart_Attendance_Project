@@ -1,0 +1,11 @@
+Student_ID,Name,Total_Classes,Attended,Attendance_Percentage,Status,Target
+1,Student1,100,85,85.0,Safe,1
+2,Student2,100,70,70.0,Shortage,0
+3,Student3,100,92,92.0,Safe,1
+4,Student4,100,65,65.0,Shortage,0
+5,Student5,100,78,78.0,Safe,1
+6,Student6,100,88,88.0,Safe,1
+7,Student7,100,72,72.0,Shortage,0
+8,Student8,100,95,95.0,Safe,1
+9,Student9,100,60,60.0,Shortage,0
+10,Student10,100,81,81.0,Safe,1
