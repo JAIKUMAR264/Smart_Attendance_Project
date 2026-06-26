@@ -5,6 +5,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("attendance_data.csv")
+df = pd.read_csv("attendance_data.csv")
+
+# Data Cleaning Checks
+print("\nMISSING VALUES")
+print(df.isnull().sum())
+
+print("\nDUPLICATES")
+print(df.duplicated().sum())
+
+print("\nDATA SUMMARY")
+print(df.describe())
 
 df["Attendance_Percentage"] = (df["Attended"] / df["Total_Classes"]) * 100
 
