@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("attendance_data.csv")
 df = pd.read_csv("attendance_data.csv")
 
+
 # Data Cleaning Checks
 print("\nMISSING VALUES")
 print(df.isnull().sum())
