@@ -1,0 +1,21 @@
+Student_ID,Feedback,Sentiment
+S00001,The classes are very interesting and easy to understand.,POSITIVE
+S00002,Faculty explains every topic clearly.,POSITIVE
+S00003,I enjoy attending practical sessions.,POSITIVE
+S00004,The attendance system works well.,POSITIVE
+S00005,Teaching quality is excellent.,POSITIVE
+S00006,The assignments are useful for learning.,POSITIVE
+S00007,The classes are boring sometimes.,NEGATIVE
+S00008,Too many assignments are given.,NEGATIVE
+S00009,Attendance marking is sometimes incorrect.,NEGATIVE
+S00010,The faculty is supportive and friendly.,POSITIVE
+S00011,The timetable is difficult to follow.,NEGATIVE
+S00012,Practical sessions are very helpful.,POSITIVE
+S00013,I am satisfied with the teaching methods.,POSITIVE
+S00014,The classroom environment is noisy.,NEGATIVE
+S00015,Attendance tracking is accurate.,POSITIVE
+S00016,I need more practical examples in class.,NEGATIVE
+S00017,Faculty motivates students to learn.,POSITIVE
+S00018,The attendance portal is slow sometimes.,NEGATIVE
+S00019,The learning materials are excellent.,POSITIVE
+S00020,Overall I am happy with the course.,POSITIVE

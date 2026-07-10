@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+.streamlit/secrets.toml
+
+database/*.db
+
+.env
+
+.vscode/

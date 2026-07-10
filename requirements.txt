@@ -1,3 +1,11 @@
+streamlit
 pandas
 matplotlib
+plotly
 scikit-learn
+tensorflow
+transformers
+google-generativeai
+reportlab
+openpyxl
+numpy
