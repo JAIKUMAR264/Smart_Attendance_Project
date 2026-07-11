@@ -1,3 +1,5 @@
+from turtle import st
+
 import pandas as pd
 import google.generativeai as genai
 
