@@ -13,16 +13,23 @@ st.set_page_config(
     page_icon="📚",
     layout="wide"
 )
+import pandas as pd
 
-attendance.to_csv(
-    "attendance.csv",
-    index=False
-)
+attendance = pd.read_csv("attendance.csv")
 
 attendance["Attendance_Status"] = (
     attendance["Attendance_Status"]
     .str.strip()
     .str.lower()
+)
+
+
+
+
+
+attendance.to_csv(
+    "attendance.csv",
+    index=False
 )
 
 st.title("📚 Subject Management")
