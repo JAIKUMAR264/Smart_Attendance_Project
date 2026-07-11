@@ -16,14 +16,7 @@ st.set_page_config(
 )
 
 # Load Data
-from database.db_connection import get_connection
-
-conn = get_connection()
-
-report = pd.read_sql_query(
-    "SELECT * FROM student_report",
-    conn
-)
+report = pd.read_csv("student_report.csv")
 
 st.title("👨‍🎓 Student Dashboard")
 st.divider()
@@ -81,10 +74,8 @@ with st.expander("Add Student"):
             ignore_index=True
         )
 
-        report.to_sql(
-    "student_report",
-    conn,
-    if_exists="replace",
+        report.to_csv(
+    "student_report.csv",
     index=False
 )
 
@@ -175,10 +166,8 @@ edited_df = st.data_editor(
 
 if st.button("💾 Save Changes"):
 
-    edited_df.to_sql(
-    "student_report",
-    conn,
-    if_exists="replace",
+    edited_df.to_csv(
+    "student_report.csv",
     index=False
 )
     st.success("Student records updated successfully!")
@@ -206,10 +195,8 @@ if st.session_state["role"] == "Admin":
             report["Student_ID"] != delete_student
         ]
 
-        report.to_sql(
-    "student_report",
-    conn,
-    if_exists="replace",
+        report.to_csv(
+    "student_report.csv",
     index=False
 )
 

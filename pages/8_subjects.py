@@ -14,13 +14,9 @@ st.set_page_config(
     layout="wide"
 )
 
-from database.db_connection import get_connection
-
-conn = get_connection()
-
-attendance = pd.read_sql_query(
-    "SELECT * FROM attendance",
-    conn
+attendance.to_csv(
+    "attendance.csv",
+    index=False
 )
 
 attendance["Attendance_Status"] = (
@@ -70,10 +66,8 @@ with st.expander("Add New Subject"):
                 ignore_index=True
             )
 
-            attendance.to_sql(
-    "attendance",
-    conn,
-    if_exists="replace",
+            attendance.to_csv(
+    "attendance.csv",
     index=False
 )
             st.success("Subject added successfully!")
@@ -155,10 +149,8 @@ if st.button("💾 Save Subject Changes"):
         attendance["Subject"] == selected_subject
     ] = edited_subject.values
 
-    attendance.to_sql(
-    "attendance",
-    conn,
-    if_exists="replace",
+    attendance.to_csv(
+    "attendance.csv",
     index=False
 )
 
@@ -183,10 +175,8 @@ if st.session_state["role"] == "Admin":
             attendance["Subject"] != delete_subject
         ]
 
-        attendance.to_sql(
-    "attendance",
-    conn,
-    if_exists="replace",
+        attendance.to_csv(
+    "attendance.csv",
     index=False
 )
 
