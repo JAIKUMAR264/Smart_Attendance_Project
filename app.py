@@ -109,32 +109,32 @@ st.subheader("⚡ Quick Access")
 q1, q2, q3, q4 = st.columns(4)
 
 with q1:
-    st.page_link("pages/2_dashboard.py", label="📊 Dashboard")
+    st.page_link("pages/1_dashboard.py", label="📊 Dashboard")
 
 with q2:
-    st.page_link("pages/08_Students.py", label="👨‍🎓 Students")
+    st.page_link("pages/7_Students.py", label="👨‍🎓 Students")
 
 with q3:
     st.page_link("pages/8_subjects.py", label="📚 Subjects")
 
 with q4:
-    st.page_link("pages/5_chatbot.py", label="🤖 AI Chatbot")
+    st.page_link("pages/4_chatbot.py", label="🤖 AI Chatbot")
 
 st.write("")
 
 q5, q6, q7, q8 = st.columns(4)
 
 with q5:
-    st.page_link("pages/3_Visualization.py", label="📈 Visualization")
+    st.page_link("pages/2_Visualization.py", label="📈 Visualization")
 
 with q6:
-    st.page_link("pages/4_Reports.py", label="📄 Reports")
+    st.page_link("pages/3_Reports.py", label="📄 Reports")
 
 with q7:
-    st.page_link("pages/6_sentiments.py", label="😊 Sentiment")
+    st.page_link("pages/5_sentiments.py", label="😊 Sentiment")
 
 with q8:
-    st.page_link("pages/7_dropout.py", label="⚠️ Dropout")
+    st.page_link("pages/6_dropout.py", label="⚠️ Dropout")
 
 st.divider()
 
