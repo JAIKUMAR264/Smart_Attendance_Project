@@ -82,7 +82,16 @@ with st.expander("Add New Subject"):
             st.rerun()
 
 
-subjects = sorted(attendance["Subject"].unique())
+attendance["Subject"] = (
+    attendance["Subject"]
+    .fillna("")
+    .astype(str)
+    .str.strip()
+)
+
+subjects = sorted(
+    attendance[attendance["Subject"] != ""]["Subject"].unique()
+)
 
 selected_subject = st.selectbox(
     "Select Subject",
